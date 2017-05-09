@@ -12,7 +12,34 @@
 		D1E8E70E1EC1AA7E00C7347D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1E8E70C1EC1AA7E00C7347D /* Main.storyboard */; };
 		D1E8E7101EC1AA7E00C7347D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1E8E70F1EC1AA7E00C7347D /* Assets.xcassets */; };
 		D1E8E7131EC1AA7E00C7347D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1E8E7111EC1AA7E00C7347D /* LaunchScreen.storyboard */; };
+		D1E8E7231EC1AAB700C7347D /* GPF.h in Headers */ = {isa = PBXBuildFile; fileRef = D1E8E7211EC1AAB700C7347D /* GPF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1E8E7261EC1AAB700C7347D /* GPF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E8E71F1EC1AAB700C7347D /* GPF.framework */; };
+		D1E8E7271EC1AAB700C7347D /* GPF.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D1E8E71F1EC1AAB700C7347D /* GPF.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D1E8E7241EC1AAB700C7347D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1E8E6FD1EC1AA7E00C7347D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1E8E71E1EC1AAB700C7347D;
+			remoteInfo = GPF;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D1E8E72B1EC1AAB700C7347D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D1E8E7271EC1AAB700C7347D /* GPF.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D1E8E7051EC1AA7E00C7347D /* GP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GP.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +49,21 @@
 		D1E8E70F1EC1AA7E00C7347D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1E8E7121EC1AA7E00C7347D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1E8E7141EC1AA7E00C7347D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1E8E71F1EC1AAB700C7347D /* GPF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1E8E7211EC1AAB700C7347D /* GPF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPF.h; sourceTree = "<group>"; };
+		D1E8E7221EC1AAB700C7347D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D1E8E7021EC1AA7E00C7347D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1E8E7261EC1AAB700C7347D /* GPF.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1E8E71B1EC1AAB700C7347D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				D1E8E7071EC1AA7E00C7347D /* GP */,
+				D1E8E7201EC1AAB700C7347D /* GPF */,
 				D1E8E7061EC1AA7E00C7347D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				D1E8E7051EC1AA7E00C7347D /* GP.app */,
+				D1E8E71F1EC1AAB700C7347D /* GPF.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,7 +104,27 @@
 			path = GP;
 			sourceTree = "<group>";
 		};
+		D1E8E7201EC1AAB700C7347D /* GPF */ = {
+			isa = PBXGroup;
+			children = (
+				D1E8E7211EC1AAB700C7347D /* GPF.h */,
+				D1E8E7221EC1AAB700C7347D /* Info.plist */,
+			);
+			path = GPF;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D1E8E71C1EC1AAB700C7347D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1E8E7231EC1AAB700C7347D /* GPF.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		D1E8E7041EC1AA7E00C7347D /* GP */ = {
@@ -74,15 +134,35 @@
 				D1E8E7011EC1AA7E00C7347D /* Sources */,
 				D1E8E7021EC1AA7E00C7347D /* Frameworks */,
 				D1E8E7031EC1AA7E00C7347D /* Resources */,
+				D1E8E72B1EC1AAB700C7347D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D1E8E7251EC1AAB700C7347D /* PBXTargetDependency */,
 			);
 			name = GP;
 			productName = GP;
 			productReference = D1E8E7051EC1AA7E00C7347D /* GP.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D1E8E71E1EC1AAB700C7347D /* GPF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1E8E72A1EC1AAB700C7347D /* Build configuration list for PBXNativeTarget "GPF" */;
+			buildPhases = (
+				D1E8E71A1EC1AAB700C7347D /* Sources */,
+				D1E8E71B1EC1AAB700C7347D /* Frameworks */,
+				D1E8E71C1EC1AAB700C7347D /* Headers */,
+				D1E8E71D1EC1AAB700C7347D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPF;
+			productName = GPF;
+			productReference = D1E8E71F1EC1AAB700C7347D /* GPF.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +175,10 @@
 				ORGANIZATIONNAME = Hannesoid;
 				TargetAttributes = {
 					D1E8E7041EC1AA7E00C7347D = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					D1E8E71E1EC1AAB700C7347D = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -114,6 +198,7 @@
 			projectRoot = "";
 			targets = (
 				D1E8E7041EC1AA7E00C7347D /* GP */,
+				D1E8E71E1EC1AAB700C7347D /* GPF */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +214,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D1E8E71D1EC1AAB700C7347D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,7 +233,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D1E8E71A1EC1AAB700C7347D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1E8E7251EC1AAB700C7347D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1E8E71E1EC1AAB700C7347D /* GPF */;
+			targetProxy = D1E8E7241EC1AAB700C7347D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D1E8E70C1EC1AA7E00C7347D /* Main.storyboard */ = {
@@ -282,6 +389,48 @@
 			};
 			name = Release;
 		};
+		D1E8E7281EC1AAB700C7347D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GPF/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = at.hannesoid.ok.GPF;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D1E8E7291EC1AAB700C7347D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GPF/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = at.hannesoid.ok.GPF;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -299,6 +448,15 @@
 			buildConfigurations = (
 				D1E8E7181EC1AA7E00C7347D /* Debug */,
 				D1E8E7191EC1AA7E00C7347D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1E8E72A1EC1AAB700C7347D /* Build configuration list for PBXNativeTarget "GPF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1E8E7281EC1AAB700C7347D /* Debug */,
+				D1E8E7291EC1AAB700C7347D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
